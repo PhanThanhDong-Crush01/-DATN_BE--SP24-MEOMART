@@ -4,6 +4,6 @@
 import dotenv from "dotenv";
 import joi from "joi";
 import Category from "../models/category";
-import Product from "../models/product";
+import Product from "../models/Product";
 
 export const create = async function (req, res) {};
