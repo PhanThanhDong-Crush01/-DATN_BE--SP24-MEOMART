@@ -1,3 +1,4 @@
+
 import mongoose from "mongoose";
 // import { IProduct } from "../interfaces/product";
 
@@ -16,3 +17,4 @@ const productSchema = new mongoose.Schema<any>(
 
 const ProductModel = mongoose.model<any>("Product", productSchema);
 export default ProductModel;
+
