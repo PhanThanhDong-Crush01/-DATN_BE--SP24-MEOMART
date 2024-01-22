@@ -98,7 +98,7 @@ export const updateTypeVoucher = async (req, res) => {
         message: "Cập nhật sản phẩm thất bại!",
       });
     }
-
+    ///fygkyihhgj,hjmghgj
     return res.status(200).json({
       message: "Cập nhật sản phẩm thành công!",
       datas: data,
