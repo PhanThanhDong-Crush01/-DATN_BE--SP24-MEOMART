@@ -10,12 +10,12 @@ export const getAllTypeVoucher = async (req, res) => {
 
     if (!data || data.length === 0) {
       return res.status(404).json({
-        message: "Không tìm thấy sản phẩm",
+        message: "Không tìm thấy loại danh mục mã khuyến mại",
       });
     }
 
     return res.status(200).json({
-      message: "Gọi danh sách sản phẩm thành công!",
+      message: "Gọi danh sách loại danh mục mã khuyến mại thành công!",
       datas: data,
     });
   } catch (error) {
@@ -32,12 +32,12 @@ export const getOneTypeVoucher = async (req, res) => {
 
     if (!data) {
       return res.status(404).json({
-        message: "Không tìm thấy sản phẩm",
+        message: "Không tìm thấy loại danh mục mã khuyến mại",
       });
     }
 
     return res.status(200).json({
-      message: "Gọi chi tiết sản phẩm thành công!",
+      message: "Gọi chi tiết loại danh mục mã khuyến mại thành công!",
       datas: data,
     });
   } catch (error) {
@@ -62,12 +62,12 @@ export const createTypeVoucher = async (req, res) => {
     }
     if (!data) {
       return res.status(404).json({
-        message: "Tạo mới sản phẩm thất bại!",
+        message: "Tạo mới loại danh mục mã khuyến mại thất bại!",
       });
     }
 
     return res.status(200).json({
-      message: "Tạo mới sản phẩm thành công!",
+      message: "Tạo mới loại danh mục mã khuyến mại thành công!",
       datas: data,
     });
   } catch (error) {
@@ -95,12 +95,12 @@ export const updateTypeVoucher = async (req, res) => {
     }
     if (!data) {
       return res.status(404).json({
-        message: "Cập nhật sản phẩm thất bại!",
+        message: "Cập nhật loại danh mục mã khuyến mại thất bại!",
       });
     }
     ///fygkyihhgj,hjmghgj
     return res.status(200).json({
-      message: "Cập nhật sản phẩm thành công!",
+      message: "Cập nhật loại danh mục mã khuyến mại thành công!",
       datas: data,
     });
   } catch (error) {
@@ -118,17 +118,17 @@ export const remoteTypeVoucher = async (req, res) => {
     console.log(data);
     if (!data) {
       return res.status(404).json({
-        message: "Xoá sản phẩm thất bại!",
+        message: "Xoá loại danh mục mã khuyến mại thất bại!",
       });
     }
 
     return res.status(200).json({
-      message: "Xoá sản phẩm thành công!",
+      message: "Xoá loại danh mục mã khuyến mại thành công!",
       data,
     });
   } catch (error) {
     return res.status(500).json({
-      message: "Xoá sản phẩm thất bại!",
+      message: "Xoá loại danh mục mã khuyến mại thất bại!",
     });
   }
 };
