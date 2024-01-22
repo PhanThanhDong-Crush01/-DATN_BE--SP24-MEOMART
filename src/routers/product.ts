@@ -1,13 +1,14 @@
 import express, { Router } from "express";
+import { getAll, restore, storage } from "../controllers/product";
 // import { authorization, } from "../middlewares/authorization";
 // import { authenticate } from "../middlewares/authenticate";
 
 const router: Router = express.Router();
-// router.get('/products', getAll);
+router.get("/", getAll);
 // router.get("/products/:id", get);
 // router.post("/products/:id", create);
-// router.patch("/products/:id", authenticate, authorization, restore)
-// router.put("/products/:id", authenticate, authorization, update)
-// router.delete("/products/:id", authenticate, authorization, remove)
+router.patch("/restore/:id", restore);
+// router.put("/:id/update", authenticate, authorization, update)
+router.patch("/storage/:id/", storage);
 
 export default router;
