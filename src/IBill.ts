@@ -2,7 +2,7 @@ export interface Bill {
   _id: string;
   IdUser: string;
   Money: number;
-  Date: String;
+  Date: string;
   Adress: string;
   Tel: string;
   IdVC: string;

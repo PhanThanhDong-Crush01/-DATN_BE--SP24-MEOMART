@@ -19,7 +19,7 @@ const BillSchema = new mongoose.Schema<any>(
       required: true,
     },
     Tel: {
-      type: Number,
+      type: String,
       required: true,
     },
     IdVC: {

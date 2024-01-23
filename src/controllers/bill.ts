@@ -17,12 +17,12 @@ export const createBill = async (req, res) => {
     }
     if (!data) {
       return res.status(404).json({
-        message: "Tạo mới sản phẩm thất bại!",
+        message: "Tạo mới hóa đơn thất bại!",
       });
     }
 
     return res.status(200).json({
-      message: "Tạo mới sản phẩm thành công!",
+      message: "Tạo mới hóa đơn thành công!",
       datas: data,
     });
   } catch (error) {
